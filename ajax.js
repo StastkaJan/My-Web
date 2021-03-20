@@ -13,7 +13,7 @@ function loadDoc() {
                     this.responseText;
             }
         };
-        xhttp.open('GET', item + '.html', true);
+        xhttp.open('GET', '/templates/' + item + '.html', true);
         xhttp.send();
     }
 }
