@@ -15,12 +15,12 @@
 
     <script src="/script/ajax.js"></script>
     <script id="remove">
+        let date = new Date();
+        if (date.getHours() - 8 > 12) {
+            document.querySelector('link[href*="light.css"]').href = "/style/dark.css";
+        }
         window.addEventListener('DOMContentLoaded', () => {
             loadDoc(['header', 'footer']);
-            let date = new Date();
-            if (date.getHours() - 8 > 12) {
-                document.querySelector('link[href*="light.css"]').href = "/style/dark.css";
-            }
             document.getElementById('remove').remove();
         });
     </script>
