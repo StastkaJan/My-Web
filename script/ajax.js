@@ -6,7 +6,7 @@ function loadDoc(x) {
                 document.querySelector(x[i]).innerHTML = this.responseText;
             }
         };
-        xhttp.open('GET', '/templates/' + x[i] + '.html', true);
+        xhttp.open('GET', '/components/' + x[i] + '.html', true);
         xhttp.send();
     }
 }
