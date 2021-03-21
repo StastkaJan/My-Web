@@ -20,7 +20,6 @@
             let date = new Date();
             if (date.getHours() - 8 > 12) {
                 document.querySelector('link[href*="light.css"]').href = "/style/dark.css";
-                document.querySelector('img[href*="iconLightTra"]').href = "/icons/iconDarkTra.svg";
             }
             document.getElementById('remove').remove();
         });
