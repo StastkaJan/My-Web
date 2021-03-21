@@ -11,19 +11,17 @@
     <link rel="shortcut icon" href="/icons/iconLight.svg" type="image/x-icon">
     <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/light.css">
 
     <script src="/script/ajax.js"></script>
-    <script>
+    <script id="remove">
         window.addEventListener('DOMContentLoaded', () => {
             loadDoc(['header', 'footer']);
             let date = new Date();
             if (date.getHours() - 8 > 12) {
-                let link = document.createElement('link');
-                link.rel = 'stylesheet';
-                link.href = '/style/dark.css';
-                document.head.appendChild(link);
+                document.querySelector('link[href*="light.css"]').href = "/style/dark.css";
             }
-            document.querySelector('head > script:last-of-type').remove();
+            document.getElementById('remove').remove();
         });
     </script>
 </head>
