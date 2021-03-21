@@ -4,12 +4,10 @@ function loadDoc(x) {
         let xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                item.innerHTML =
-                    this.responseText;
+                item = this.responseText;
             }
         };
         xhttp.open('GET', '/templates/' + x[i] + '.html', true);
         xhttp.send();
-        item.removeAttribute("id");
     }
 }
