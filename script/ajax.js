@@ -9,5 +9,4 @@ function loadDoc(x) {
         xhttp.open('GET', '/templates/' + x[i] + '.html', true);
         xhttp.send();
     }
-    document.querySelectorAll('script')[0].remove()
 }
