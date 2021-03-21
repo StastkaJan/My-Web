@@ -1,12 +1,15 @@
-function loadSection(x) {
-    console.log('Hi!');
-    let y = this;
-    let xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            y = this.responseText;
-        }
-    };
-    xhttp.open('GET', '/templates/' + x + '.html', true);
-    xhttp.send();
+function loadDoc(x) {
+    for (let i = 0; i < x.length; i++) {
+        let item = document.getElementById(x[i]);
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                item.innerHTML =
+                    this.responseText;
+            }
+        };
+        xhttp.open('GET', '/templates/' + x[i] + '.html', true);
+        xhttp.send();
+        item.removeAttribute("id");
+    }
 }

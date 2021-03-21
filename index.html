@@ -14,25 +14,16 @@
 
     <script src="/script/ajax.js"></script>
     <script>
-        function loadSection(x) {
-            console.log('Hi!');
-            let y = this;
-            let xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    y = this.responseText;
-                }
-            };
-            xhttp.open('GET', '/templates/' + x + '.html', true);
-            xhttp.send();
-        }
+        window.addEventListener('DOMContentLoaded', () => {
+            loadDoc(['header', 'footer']);
+        });
     </script>
 </head>
 
 <body>
-    <link onload="loadSection('header')" />
+    <header id="header"></header>
     <p>Hi all</p>
-    <link onload="loadSection('footer')" />
+    <footer id="footer"></footer>
 </body>
 
 </html>
