@@ -1,4 +1,5 @@
 function loadSection(x) {
+    console.log('Hi!');
     let y = this;
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
