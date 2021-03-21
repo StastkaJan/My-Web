@@ -5,27 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <script id="remove">
-        let date = new Date();
-        if (date.getHours() - 8 > 12) {
-            document.querySelector('link[href*="light.css"]').href = "/style/dark.css";
-            document.querySelector('link[href*="iconLight"]').href = "/icons/iconDarkTra.svg";
-        }
-        window.addEventListener('DOMContentLoaded', () => {
-            loadDoc(['header', 'footer']);
-            document.getElementById('remove').remove();
-        });
-    </script>
 
     <title>Jan Stastka</title>
 
-    <link rel="shortcut icon" href="/icons/iconLightTra.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/icons/iconLight.svg" type="image/x-icon">
     <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/light.css">
 
     <script src="/script/ajax.js"></script>
+    <script id="remove">
+        window.addEventListener('DOMContentLoaded', () => {
+            loadDoc(['header', 'footer']);
+            let date = new Date();
+            if (date.getHours() - 8 > 12) {
+                document.querySelector('link[href*="light.css"]').href = "/style/dark.css";
+                document.querySelector('img[href*="iconLightTra"]').href = "/icons/iconDarkTra.svg";
+            }
+            document.getElementById('remove').remove();
+        });
+    </script>
 </head>
 
 <body>
