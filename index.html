@@ -16,6 +16,14 @@
     <script>
         window.addEventListener('DOMContentLoaded', () => {
             loadDoc(['header', 'footer']);
+            let date = new Date();
+            if (date.getHours() - 8 > 12) {
+                let link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = '/style/dark.css';
+                document.head.appendChild(link);
+            }
+            document.querySelector('head > script:last-of-type').remove();
         });
     </script>
 </head>
