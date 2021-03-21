@@ -13,17 +13,12 @@
     <link rel="stylesheet" href="/style/style.css">
 
     <script src="/script/ajax.js"></script>
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            loadDoc(['header', 'footer']);
-        });
-    </script>
 </head>
 
 <body>
-    <Header onload="ajax('header')" />
+    <header onload="ajax('header')"></header>
     <p>Hi all</p>
-    <Footer onload="ajax('footer')" />
+    <footer onload="ajax('footer')"></footer>
 </body>
 
 </html>
