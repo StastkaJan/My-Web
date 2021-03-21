@@ -1,4 +1,4 @@
-function ajax(x) {
+function loadSection(x) {
     let y = this;
     console.log(y,x);
     let xhttp = new XMLHttpRequest();
