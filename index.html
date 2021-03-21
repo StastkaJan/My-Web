@@ -18,10 +18,10 @@
         window.addEventListener('DOMContentLoaded', () => {
             loadDoc(['header', 'footer']);
             let date = new Date();
-            if (date.getHours() - 8 > 12) {
+            if (date.getHours() < 8 || date.getHours() > 20) {
                 document.querySelector('link[href*="light.css"]').href = "/style/dark.css";
             }
-            //document.getElementById('remove').remove();
+            document.getElementById('remove').remove();
         });
     </script>
 </head>
