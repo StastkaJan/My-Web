@@ -1,19 +1,9 @@
-@font-face {
-    font-family: "Roboto";
-    src: url("/fonts/Roboto-Light.ttf");
-}
-
-@font-face {
-    font-family: "Roboto Slab";
-    src: url("/fonts/RobotoSlab-Light.ttf");
-}
-
 html {
     font-size: 16px;
     font-family: 'Roboto', Arial, sans-serif;
     color: var(--primary);
     scroll-behavior: smooth;
-    font-display: block;
+    font-display: swap;
 }
 
 body {
