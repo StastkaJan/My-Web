@@ -9,7 +9,7 @@ main {
 }
 
 main h1 {
-    text-align: center;
+    margin-left: 20px;
 }
 
 main h1>span {
