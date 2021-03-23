@@ -13,7 +13,7 @@ html {
     font-family: 'Roboto', Arial, sans-serif;
     color: var(--primary);
     scroll-behavior: smooth;
-    font-display: block;
+    font-display: swap;
 }
 
 body {
