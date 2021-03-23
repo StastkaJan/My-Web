@@ -8,6 +8,10 @@ main {
     margin: 20px;
 }
 
+main h1 {
+    text-align: center;
+}
+
 main h1>span {
     margin-left: 20px;
     display: block;
