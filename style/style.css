@@ -1,0 +1,39 @@
+header>a {
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+header h1,
+main h1 {
+    margin-left: 20px;
+}
+
+main h1>span {
+    margin-left: 20px;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+main>p {
+    color: var(--secondary);
+}
+
+main>p strong {
+    color: var(--primary);
+    font-weight: normal;
+}
+
+
+footer {
+    text-align: center;
+    margin: 20px;
+}

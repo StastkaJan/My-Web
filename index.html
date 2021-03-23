@@ -9,20 +9,25 @@
 
     <title>Jan Stastka</title>
 
+    <script>
+        let date = new Date();
+        if (date.getHours() < 8 || date.getHours() > 20) {
+            document.documentElement.style.setProperty('--bg', '#262626');
+            document.documentElement.style.setProperty('--primary', '#fafafa');
+            document.documentElement.style.setProperty('--highlight', '#04FFFB');
+            document.documentElement.style.setProperty('--secondary', '#B0B0B0');
+        } else {
+            document.documentElement.style.setProperty('--bg', '#fafafa');
+            document.documentElement.style.setProperty('--primary', '#262626');
+            document.documentElement.style.setProperty('--highlight', '#0424D9');
+            document.documentElement.style.setProperty('--secondary', '#676767');
+        }
+    </script>
+
     <link rel="stylesheet" href="/fonts.zip">
     <link rel="shortcut icon" href="/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/light.css">
-
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            let date = new Date();
-            if (date.getHours() < 8 || date.getHours() > 20) {
-                document.querySelector('link[href*="light.css"]').href = "/style/dark.css";
-            }
-        });
-    </script>
 </head>
 
 <body>
