@@ -4,6 +4,7 @@ html {
     font-size: 16px;
     font-family: 'Roboto', 'Arial', sans-serif;
     color: var(--primary);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,4 +14,9 @@ body {
 a {
     text-decoration: none;
     color: var(--primary);
+}
+
+blockquote {
+    padding-left: 20px;
+    border-left: solid 2px var(--primary);
 }
