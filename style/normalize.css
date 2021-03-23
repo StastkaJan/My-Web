@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@00&display=swap');
 
 html {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Roboto', Arial, sans-serif;
     color: var(--primary);
     scroll-behavior: smooth;
