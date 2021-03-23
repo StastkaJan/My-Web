@@ -21,5 +21,9 @@ blockquote {
     border-left: solid 2px var(--primary);
     display: flex;
     flex-direction: column;
-    margin: 10px 0;
+    margin: 10px 5px;
+}
+
+p {
+    line-height: 1.3rem;
 }
