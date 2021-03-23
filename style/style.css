@@ -8,6 +8,12 @@ main {
     margin: 20px;
 }
 
+main h1>span {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
 footer {
     text-align: center;
 }
