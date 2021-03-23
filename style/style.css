@@ -21,6 +21,16 @@ main h1>span {
     font-weight: 300;
 }
 
+main>p {
+    color: var(--secondary);
+}
+
+main>p strong {
+    color: var(--primary);
+    font-weight: normal;
+}
+
+
 footer {
     text-align: center;
     margin: 20px;
