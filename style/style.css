@@ -1,1 +1,9 @@
-/*  */
+header {
+    display: flex;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
