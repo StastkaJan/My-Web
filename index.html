@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="">
 
     <title>Jan Stastka</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap">
     <link rel="shortcut icon" href="/icons/iconLight.svg" type="image/x-icon">
     <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/light.css">
 
-    <script src="/script/ajax.js"></script>
-    <script id="remove">
+    <script>
         window.addEventListener('DOMContentLoaded', () => {
-            loadDoc(['header', 'footer']);
             let date = new Date();
             if (date.getHours() < 8 || date.getHours() > 20) {
                 document.querySelector('link[href*="light.css"]').href = "/style/dark.css";
@@ -26,7 +28,23 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <a href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <rect width="64" height="64" rx="20" fill="white" />
+                <path
+                    d="M23.6065 36.8198C22.2136 35.4269 21.1087 33.7733 20.3549 31.9534C19.6011 30.1336 19.2131 28.183 19.2131 26.2132C19.2131 24.2434 19.6011 22.2928 20.3549 20.4729C21.1087 18.6531 22.2136 16.9995 23.6065 15.6066C24.9993 14.2137 26.6529 13.1088 28.4728 12.355C30.2927 11.6012 32.2432 11.2132 34.2131 11.2132C36.1829 11.2132 38.1334 11.6012 39.9533 12.355C41.7732 13.1088 43.4268 14.2137 44.8197 15.6066L34.2131 26.2132L23.6065 36.8198Z"
+                    fill="#262626" />
+                <path
+                    d="M40.8198 27.6066C42.2127 28.9995 43.3176 30.6531 44.0714 32.4729C44.8252 34.2928 45.2132 36.2434 45.2132 38.2132C45.2132 40.183 44.8252 42.1336 44.0714 43.9534C43.3176 45.7733 42.2127 47.4269 40.8198 48.8198C39.4269 50.2127 37.7733 51.3176 35.9535 52.0714C34.1336 52.8252 32.183 53.2132 30.2132 53.2132C28.2434 53.2132 26.2928 52.8252 24.473 52.0714C22.6531 51.3176 20.9995 50.2127 19.6066 48.8198L30.2132 38.2132L40.8198 27.6066Z"
+                    fill="#262626" />
+            </svg>
+            <h1>Jan Stastka</h1>
+        </a>
+        <nav>
+
+        </nav>
+    </header>
     <main>
         <h1>Ahoj,<br><span>očekával jsem tě.</span></h1>
         <p>
@@ -34,11 +52,13 @@
             Cože?!? Ty stále čteš? Tedy promiň za zdržení a pusťmě se do toho!
         </p>
         <p>
-            Zdravím, <strong>jmenuji se Jan Šťástka</strong> – říkej mi Honzo. Pocházím z Liberce a ve volném čase se <strong>zajmám o weby</strong>.
+            Zdravím, <strong>jmenuji se Jan Šťástka</strong> – říkej mi Honzo. Pocházím z Liberce a ve volném čase se
+            <strong>zajmám o weby</strong>.
             Nechci tě víc zdržovat hloupostmi, ale jestli jsem tě zaujal mrkni na sekci <a href="#">O mně</a>.
         </p>
         <p>
-            Co si myslím, by tě mohlo zajímat víc je, <strong>čemu se věnuji</strong>. Trefil jsem se? Tak se pojďmě podívat! Níže najdeš
+            Co si myslím, by tě mohlo zajímat víc je, <strong>čemu se věnuji</strong>. Trefil jsem se? Tak se pojďmě
+            podívat! Níže najdeš
             krátký seznam mého denního chleba.
         </p>
         <blockquote>
@@ -48,10 +68,12 @@
             <span>Kompletní redesign stránek</span>
         </blockquote>
         <p>
-            Zvláštní koníčky, že? Ale <strong>tím to nekončí!</strong> Pokud chceš slyšet víc koukni na stránku <a href="#">Aktivity</a>.
+            Zvláštní koníčky, že? Ale <strong>tím to nekončí!</strong> Pokud chceš slyšet víc koukni na stránku <a
+                href="#">Aktivity</a>.
         </p>
         <p>
-            Dále bych té rád odkázal na své <a href="#">Portfolio</a>, ale jak tě nalákat? Mrkni dolů na <strong>ukázky pár mých prací</strong>.
+            Dále bych té rád odkázal na své <a href="#">Portfolio</a>, ale jak tě nalákat? Mrkni dolů na <strong>ukázky
+                pár mých prací</strong>.
         </p>
         <div>
 
@@ -69,7 +91,8 @@
             <span>WordPress</span>
         </blockquote>
         <p>
-            Zase to bylo jen pár hlavních věcí a už mě znáš dost dobře, na to abys věděl, že tě v případě zájmu odkážu na sekci <a href="#">Znalosti</a>.
+            Zase to bylo jen pár hlavních věcí a už mě znáš dost dobře, na to abys věděl, že tě v případě zájmu odkážu
+            na sekci <a href="#">Znalosti</a>.
         </p>
         <p>
             Víc už ti bohužel říct nedokážu.
@@ -78,23 +101,28 @@
             No...
         </p>
         <p>
-            Dobře, vyhrál jsi, tady máš na mě <strong>kontaktní údaje</strong>. Můžeš hned <a href="#">Napsat mail</a> či mi rovnou <a href="#">Zavolat</a>.
+            Dobře, vyhrál jsi, tady máš na mě <strong>kontaktní údaje</strong>. Můžeš hned <a href="#">Napsat mail</a>
+            či mi rovnou <a href="#">Zavolat</a>.
         </p>
         <blockquote>
             <span>+420 730 914 904</span>
             <span>jan.stastka12@gmail.com</span>
         </blockquote>
         <p>
-            Další přívětivou možností je mi napsat na <strong>sociálních sítích</strong>. Zastihneš mě na <a href="#">Facebook</a>, <a href="#">Instagram</a> nebo třeba i <a href="#">WhatsApp</a>.
+            Další přívětivou možností je mi napsat na <strong>sociálních sítích</strong>. Zastihneš mě na <a
+                href="#">Facebook</a>, <a href="#">Instagram</a> nebo třeba i <a href="#">WhatsApp</a>.
         </p>
         <p>
-            <strong>To už by za mě bylo vážně všechno</strong>, nech mě teď prosím chvilku odpočinout. Myslím, že možností pro další čtení jsem ti dal dost. Pokud ne koukni třeba na <a href="">Wikipedii</a>.
+            <strong>To už by za mě bylo vážně všechno</strong>, nech mě teď prosím chvilku odpočinout. Myslím, že
+            možností pro další čtení jsem ti dal dost. Pokud ne koukni třeba na <a href="">Wikipedii</a>.
         </p>
         <p>
             Mimochodem... Víš, že už má přes 50 milionů článků? Úžasné, že!
         </p>
     </main>
-    <footer></footer>
+    <footer>
+        <span>Jan Šťástka | &#169; 2021</span>
+    </footer>
 </body>
 
 </html>
