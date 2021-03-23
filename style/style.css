@@ -1,5 +1,6 @@
 header>a {
     display: flex;
+    color: var(--primary);
 }
 
 main {
