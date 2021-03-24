@@ -1,6 +1,6 @@
 html {
-    font-size: 16px;
-    font-family: 'Roboto', 'Roboto ext', sans-serif;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
     color: var(--primary);
     scroll-behavior: smooth;
 }
@@ -29,6 +29,6 @@ blockquote>span {
 p {
     line-height: 1.3rem;
     margin: 5px 0;
-    font-family: 'Roboto Slab', 'Roboto slab ext', serif;
+    font-family: 'Roboto Slab', serif;
     text-align: justify;
 }
