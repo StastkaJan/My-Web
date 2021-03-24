@@ -24,12 +24,12 @@ main h1>span {
 }
 
 main>p {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 main>p strong {
     color: var(--primary);
-    font-weight: normal;
+    font-weight: 600;
 }
 
 

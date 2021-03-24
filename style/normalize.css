@@ -12,6 +12,7 @@ body {
 a {
     text-decoration: none;
     color: var(--highlight);
+    font-weight: 600;
 }
 
 blockquote {
@@ -27,7 +28,7 @@ blockquote>span {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
     margin: 5px 0;
     font-family: 'Roboto Slab', serif;
