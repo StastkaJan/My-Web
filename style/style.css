@@ -2,7 +2,6 @@ header>a {
     display: flex;
     align-items: center;
     color: var(--primary);
-    font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -16,6 +15,7 @@ main {
 header h1,
 main h1 {
     margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 main h1>span {
