@@ -2,6 +2,7 @@ header>a {
     display: flex;
     align-items: center;
     color: var(--primary);
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
