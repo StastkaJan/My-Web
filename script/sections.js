@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 function checkSections() {
-    checkHeader(['basicHeader', 'reversedHeader']);
+    checkHeader(['basicHeader', 'reverseHeader']);
 }
 
 function checkHeader(options) {
