@@ -33,12 +33,11 @@ function httpRequest(method, address) {
     let request = new XMLHttpRequest();
     request.open(method, address);
 
-    /*request.onload = function () {
+    request.onload = function () {
+        console.log(request.response);
+        console.log(JSON.parse(request.response));
         return JSON.parse(request.response);
-    }*/
-
-    console.log(request.onload);
-    request.onload = console.log(request.onload);
+    }
 
     request.send();
 }
