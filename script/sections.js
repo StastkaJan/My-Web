@@ -39,5 +39,9 @@ function httpRequest(method, file, address) {
 }
 
 function printToDoc(value, address) {
+        if (address.match('Mobile') != null) {
+            address = address.substring(0, address.match('Mobile').index);
+        }
+
     document.getElementsByClassName(address)[0].innerHTML = value.code;
 }
