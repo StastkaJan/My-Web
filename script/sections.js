@@ -25,7 +25,7 @@ function checkHeader() {
 
     if (header != undefined) {
         document.getElementsByClassName(header)[0].innerHTML =
-            JSON.parse(httpRequest('GET', '/script/' + header + '.json')).code;
+            httpRequest('GET', '/script/' + header + '.json').code;
     }
 }
 
@@ -33,9 +33,9 @@ function httpRequest(method, address) {
     let request = new XMLHttpRequest();
     request.open(method, address);
 
-    request.onload = function () {
-        return request.response;
-    }
+    /*request.onload = function () {
+        return JSON.parse(request.response);
+    }*/
 
     console.log(request.onload);
     request.onload = console.log(request.onload);
