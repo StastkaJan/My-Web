@@ -10,11 +10,12 @@ function checkHeader(options) {
     if (document.querySelector('header').classList[0] != undefined) {
         let header = document.querySelector('header').classList[0];
 
-        options.forEach(e => function () {
+        for (let e of options) {
             if (e === header) {
-                httpRequest('GET', header)
+                httpRequest('GET', header);
+                break;
             }
-        })
+        }
     }
 }
 
