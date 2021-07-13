@@ -13,17 +13,22 @@ function check(check, options) {
 
         for (let e of options) {
             if (e === section) {
-                httpRequest('GET', section);
+                if (window.innerWidth <= 480) {
+                    httpRequest('GET', check,  section + 'Mobile');
+                }
+                else {
+                    httpRequest('GET', check, section);
+                }
                 break;
             }
         }
     }
 }
 
-function httpRequest(method, address) {
+function httpRequest(method, file, address) {
     let request = new XMLHttpRequest();
 
-    request.open(method, '/components/' + address + '.json');
+    request.open(method, '/components/' + file + '/' + address + '.json');
 
     request.onload = function () {
         let json = JSON.parse(request.response);
