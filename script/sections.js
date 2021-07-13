@@ -3,16 +3,17 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 function checkSections() {
-    checkHeader(['basicHeader', 'reverseHeader']);
+    check('header', ['basicHeader', 'reverseHeader']);
+    check('footer', ['basicFooter', 'reverseFooter']);
 }
 
-function checkHeader(options) {
-    if (document.querySelector('header').classList[0] != undefined) {
-        let header = document.querySelector('header').classList[0];
+function check(check, options) {
+    if (document.querySelector(check).classList[0] != undefined) {
+        let section = document.querySelector(check).classList[0];
 
         for (let e of options) {
-            if (e === header) {
-                httpRequest('GET', header);
+            if (e === section) {
+                httpRequest('GET', section);
                 break;
             }
         }
